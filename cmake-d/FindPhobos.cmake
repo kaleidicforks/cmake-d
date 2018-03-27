@@ -6,7 +6,7 @@ elseif("${CMAKE_D_COMPILER_ID}" STREQUAL "LDC")
 	find_library(PHOBOS_LIBRARY phobos2-ldc)
 elseif("${CMAKE_D_COMPILER_ID}" STREQUAL "GDC")
 	find_library(PHOBOS_LIBRARY gphobos)
-else
+else()
 	message(FATAL_ERROR "Unsupported D compiler: ${CMAKE_D_COMPILER_ID}")
 endif()
 
